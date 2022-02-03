@@ -1,0 +1,163 @@
+--testing so let you all skid lmao
+local plr = game.Players.LocalPlayer
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("MR Destroyer Hub Canadian Developement. Thanks For Using"...plr.Name, "Synapse")
+
+local Main = Window:NewTab("Info")
+local Script = Window:NewTab("Script")
+local Player = Window:NewTab("LocalPlayer")
+local OptionTab = Window:NewTab("Option")
+local Universal = Window:NewTab("Universal Script")
+local MiscTab = Window:NewTab("Misc")
+
+local Misc = MiscTab:NewSection("Misc")
+local MainSection = Main:NewSection("Main")
+local ScriptHub = Script:NewSection("Script Hub")
+local FEScript = Script:NewSection("Fe Script")
+local LocalPlayer = Player:NewSection("LocalPlayer")
+local Option = OptionTab:NewSection("Option")
+local UniversalScript = Universal:NewSection("Universal Script")
+
+LocalPlayer:NewSlider("WalkSpeed", "Make You Walk Faster", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+LocalPlayer:NewSlider("JumpPower", "Make You Jump Higher", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+    game.Players.LocalPlayer.Character.Humanoid.JumpHeight = s
+end)
+
+LocalPlayer:NewButton("Cilent F3X", "giving you F3X Cilented", function()
+    loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
+end)
+ScriptHub:NewButton("Slap Battles", "Load Slap Battles Hub", function()
+    string = "Mr Destroyer Slapping Slap Battles xdxdxd / welcum"
+msg = Instance.new("Message") msg.Parent = game.Workspace
+msg.Name = "msg" 
+msg.Text = string
+wait(3.0) 
+msg:Destroy()
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Slap Battles ez bypass", "Synapse")
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("LocalPlayer")
+MainSection:NewSlider("WalkSpeed", "Make You Walk Faster", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+MainSection:NewButton("Anti Ragdoll", "bypassing ragdoll (flying glitch)", function()
+    local ragdoll = game:GetService("Players").LocalPlayer.Character.isInArena
+	ragdoll:Remove()
+end)
+MainSection:NewButton("Default Arena AntiRagdoll", "bypassing ragdoll (flying glitch)", function()
+    local ragdoll = game:GetService("Players").LocalPlayer.Character.IsInDefaultArena
+	ragdoll:Remove()
+end)
+end)
+Misc:NewButton("Unlock Workspace", "unlock locked part", function()
+	for i,v in pairs(workspace:GetDescendants()) do
+		if v:IsA("BasePart") then
+			v.Locked = false
+		end
+	end
+end)
+
+LocalPlayer:NewToggle("Inf Jump", "You Will Jump Inf", function(state)
+	local Player = game:GetService("Players").LocalPlayer
+	local Mouse = Player:GetMouse()
+	Mouse.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+				Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+				Humanoid:ChangeState("Jumping")
+				wait(0.1)
+				Humanoid:ChangeState("Seated")
+			end
+		end
+	end) 
+
+if state then
+        _G.infinjump = true
+    else
+        _G.infinjump = false
+    end
+end)
+LocalPlayer:NewButton("The Wok Give Social Credit", "haha yes u will get social credit", function()
+    local ScreenGui = Instance.new("ScreenGui")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ImageLabel.Parent = ScreenGui
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0.356083095, 0, 0.346092492, 0)
+ImageLabel.Size = UDim2.new(0, 243, 0, 199)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=7715783560"
+
+TextLabel.Parent = ImageLabel
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0856910646, 0, 0.744422734, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "+6969 Social Credit"
+TextLabel.TextColor3 = Color3.fromRGB(0, 170, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+wait(3.5)
+ScreenGui:Destroy()
+end)
+UniversalScript:NewButton("Inf Yield", "Opening Inf Yield", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+UniversalScript:NewButton("Cmd X", "Opening Cmd X", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+end)
+MainSection:NewLabel("Privated Scam Hub")
+MainSection:NewLabel("Current Version: V0.9")
+MainSection:NewLabel("Hub Status: Not Patched")
+Option:NewKeybind("Toggle UI", "Keybind To Toggle Your UI", Enum.KeyCode.P, function()
+	Library:ToggleUI()
+end)
+MainSection:NewButton("Fe Checker", "detect if game had FE on or not", function()
+    if Workspace.FilteringEnabled == true then
+      game.StarterGui:SetCore("SendNotification", {
+    Title = 'FE Is Enabled!';
+    Text = 'Now Fuck Off This Useless Feature';
+    Duration = 6;
+  })
+    else
+      game.StarterGui:SetCore("SendNotification", {
+    Title = 'FE Is Disabled!';
+    Text = 'Now Go Play Other Game';
+    Duration = 6;
+  })
+end
+end)
+LocalPlayer:NewButton("Netless Remake", "This only work when the script dosent have netless/bypass", function()
+settings().Physics.AllowSleep = false
+for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
+if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
+game:GetService("RunService").Heartbeat:connect(function()
+v.Velocity = Vector3.new(0,35,0)
+wait(1)
+end)
+end
+end
+end)
+Option:NewButton("Lower Graphic", "Boost FPS And Less Stutter", function(args, speaker)
+    	workspace:FindFirstChildOfClass('Terrain').WaterWaveSize = 0
+	workspace:FindFirstChildOfClass('Terrain').WaterWaveSpeed = 0
+	workspace:FindFirstChildOfClass('Terrain').WaterReflectance = 0
+	workspace:FindFirstChildOfClass('Terrain').WaterTransparency = 0
+	game:GetService("Lighting").GlobalShadows = false
+	game:GetService("Lighting").FogEnd = 9e9
+	settings().Rendering.QualityLevel = 1
+		for i,v in pairs(game:GetService("Lighting"):GetDescendants()) do
+		if v:IsA("BlurEffect") or v:IsA("SunRaysEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("BloomEffect") or v:IsA("DepthOfFieldEffect") then
+			v.Enabled = false
+		end
+	end
+end)
