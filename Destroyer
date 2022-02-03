@@ -1,7 +1,7 @@
---testing so let you all skid lmao
+--fixed shit
 local plr = game.Players.LocalPlayer
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("MR Destroyer Hub Canadian Developement. Thanks For Using"...plr.Name, "Synapse")
+local Window = Library.CreateLib("MR Destroyer Hub Developement. Thanks "..plr.Name, "Synapse")
 
 local Main = Window:NewTab("Info")
 local Script = Window:NewTab("Script")
