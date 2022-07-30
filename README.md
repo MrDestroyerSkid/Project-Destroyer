@@ -17,8 +17,10 @@ Providing fast and easy to use hub and less slowdown with most necessary stuff i
 Most of API executor are keyless or possibly not enough functionability
 We are HIGHLY STRICTED about user API
 For example
-```sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", 0) --supported sethiddenproperty
-    game.Players.LocalPlayer.SimulationRadius = 0 --not supported sethiddenproperty
+```
+sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", 0) --supported sethiddenproperty
+
+game.Players.LocalPlayer.SimulationRadius = 0 --not supported sethiddenproperty
 ```
 API interface are very important and required most of the functions you may never used
 I will try to keep up script working as possible, but not effective as you seen
