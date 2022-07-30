@@ -9,9 +9,20 @@ How much does it cost? Is free!
 
 Does it works on almost all executor? Yes!
 
-Script has a universal hub and include a lot of games! (+4 free games for now)
+Script has a universal hub and include a lot of games! (+5 free games for now)
 
-Providing fast and easy to use hub and less slowdown unlike other script! It tries it best to use a limited functionability on API executor as much as possible to keep up the script running
+Providing fast and easy to use hub and less slowdown with most necessary stuff if yeah..
+
+# Possibly limited function
+Most of API executor are keyless or possibly not enough functionability
+We are HIGHLY STRICTED about user API
+For example
+```sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", 0) --supported sethiddenproperty
+    game.Players.LocalPlayer.SimulationRadius = 0 --not supported sethiddenproperty
+```
+API interface are very important and required most of the functions you may never used
+I will try to keep up script working as possible, but not effective as you seen
+
 # Community
 We have a good community and I am a good owner :) (not really)
 
