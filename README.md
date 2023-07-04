@@ -1,4 +1,4 @@
-# Project-Destroyer, provides you a best script hub
+# Project-Destroyer
 Designed for a good free script hub. As for the credits, thanks to few of the creator has their script and helped everyone out and me on this project (on the script)
 
 It was made by solo developer posterRetarded64#0870 (poster) and designed to use KAVO ui lib
