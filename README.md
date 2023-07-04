@@ -1,4 +1,5 @@
 #MrDestroyer BETA
+
 ***This is not a free script, if you are willing to buy, it will be made purchaseable once released***
 
 The best Roblox Exploiting Script-hub provide multiple scripts for games
